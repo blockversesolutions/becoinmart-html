@@ -1,0 +1,317 @@
+
+@media screen and (min-width:1280px) {
+  .navbar-nav {
+    gap:15px;
+  }
+}
+ 
+@media screen and (max-width:1280px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}
+@media screen and (max-width:1199px) {
+  .roadmap-item:nth-child(odd) .roadmap-item-inner::after {
+    left: -182px;
+  }
+  .roadmap-item-inner::after {
+    width: 210px;
+  }
+  .roadmap-area {
+    position: relative;
+    margin-top:340px !important;
+  }
+  .roadmap-cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-155px;
+    transform: translateY(-50%);
+    background: #040C17;
+    padding: 15px;
+    border: 1px solid #0a3455;
+    border-radius: 10px;
+  }
+  .roadmap-item{
+    max-width: 48%;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-inner::after{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-item > a{
+    padding: 10px;
+  }
+ 
+  .navbar-collapse {
+    margin-top: 25px;
+  }
+  .header-area {
+     
+    margin-bottom:0px;
+    
+  }
+  .hero-section {
+    padding-top: 20px;
+  }
+  .common-heading-section h3 {
+    font-size: 50px;
+  }
+  .small-card-left,.small-card-right {
+    bottom: -145px;
+  }
+  .common-heading-section h5 {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .common-heading-section h4 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .platform-logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits-tag span {
+    font-size: 16px;
+  }
+  .benefits-tag ul {
+    gap: 7px;
+    margin-top:10px;
+
+  }
+  .benefits-tag ul li{
+    margin-right: 20px;
+  }
+  .platform-text {
+    margin-left: 10px;
+  }
+  .accordion-button {
+    font-size: 20px;
+  }
+  .support-list {
+    width: 66%;
+  }
+  .footer {
+    gap: 46px;
+  }
+  .roadmap-box-inner h5 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .mt-100 {
+    margin-top: 80px;
+  }
+  .ptb-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .mt-70 {
+    margin-top: 50px;
+  }
+  .header-right {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width:767px) {
+  .roadmap-item-inner::after{
+    display: none;
+  }
+  .roadmap-item{
+    max-width:100%;
+  }
+  .buy-ecm-icon{
+    margin-right: 20px;
+  }
+  .platform-text{
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .gap-md-20{
+    gap: 20px;
+  }
+  .common-heading-section h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 15px;
+    line-height:28px;
+  }
+  .small-card-left, .small-card-right {
+    bottom: -42%;
+  }
+  .primary-btn, .secondary-btn {
+    padding: 10px 24px;
+    gap:5px;
+    font-size: 16px;
+  }
+  .common-heading-section h4 {
+    font-size: 30px;
+  }
+  .listed ul li a {
+    font-size: 18px;
+  }
+  .shear-icon-list ul li i {
+    font-size: 20px;
+  }
+  .shear-icon-list ul li {
+    height: 48px;
+    width: 48px;
+  }
+  .project-icon img, .project-founder img {
+    width: 60px;
+    height: 60px;
+  }
+  .primary-btn img, .secondary-btn img {
+    width: 16px;
+  }
+  .buy-coin-step h6 {
+    font-size: 25px;
+  }
+  .support-list {
+    width: 100%;
+  }
+  .footer {
+    gap:35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-item h4 {
+    font-size: 24px;
+  }
+  .input {
+    padding: 8px 30px;
+  }
+  .footer-subscribe button {
+ 
+    height: 40px;
+    max-width: 40px;
+    min-width: 40px;
+    margin-right: 1px;
+  }
+  .footer-logo img {
+    max-width: 105px;
+  }
+  .social-menu ul li a.primary-btn {
+    height: 36px;
+    width: 36px;
+  }
+  .social-menu ul li a i {
+    font-size: 15px;
+  }
+  .hero-thumbnails{
+    margin-top: 40px;
+  }
+  .chart-thumbnail{
+    margin-top: 40px;
+  }
+ 
+ 
+}
+@media screen and (max-width:480px) {
+  .about-thumbnail img,.ecm-chart-text img,.chart-thumbnail img {
+    max-width: 300px;
+  }
+  .p-30 {
+    padding: 20px;
+  }
+  .g-15 {
+    gap: 10px;
+  }
+ 
+  .navbar {
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .common-heading-section h3 {
+    font-size:32px;
+  }
+  .common-heading-section h4 {
+    font-size:26px;
+    line-height:35px;
+  }
+  .buy-ecm-icon {
+    margin-right: 10px;
+  }
+  .buy-ecm-icon img {
+    height: 48px;
+    width: 48px;
+  }
+  .whitepaper-faq ul li a {
+    padding: 10px 25px;
+    font-size: 18px;
+  }
+  .footer-bottom{
+    justify-content: center !important;
+  }
+  .ellipse {
+    overflow: hidden;
+    width: 300px
+  }
+  .header-area {
+    position: sticky;
+    padding: 0px 0;
+    top: 0px;
+    padding-top: 26px;
+  }
+  body{
+    overflow-x: hidden !important;
+  }
+  .ico-progress .progress {
+    height: 30px;
+  }
+  .footer-subscribe {
+    max-width: 310px;
+  }
+  .modal{
+    width: 98%;
+  }
+  .benefits-tag ul li p{
+    font-size: 14px;
+  }
+  .learn-more-section,.ecm-chart-section{
+    overflow: hidden;
+  }
+  .xl-p-20 {
+    padding: 10px !important;
+    font-size: 18px !important;
+  }
+  .gradient-bg {
+    font-size: 14px;
+  }
+  input{
+    font-size: 14px;
+  }
+  .label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+ 
+  .secondary-outline-btn {
+    padding: 8px 32px;
+    font-size: 16px;
+  }
+  .g-10 {
+    gap:5px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+}
+
+
+

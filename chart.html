@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Line Chart</title>
+  <style>
+    body {
+      background-color: #0f172a; /* Match the chart's background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    canvas {
+      max-width: 600px;
+      max-height: 300px;
+    }
+  </style>
+</head>
+<body>
+     <div class="d-flex flex-column g-8 mt-20">
+                              <div class="input-group border-gradient-3 d-flex align-items-center">
+                                 <span class="label color-2EA" id="wallet_address">Your Address</span>
+                                 <input type="text" class="form-control"
+                                    value="0xB27448291CA7dF45278CF1c9c7422D76647f6B7E" readonly id="wallet_address"
+                                    placeholder="Your Address" />
+                              </div>
+                              <div class="input-group border-gradient-4 d-flex align-items-center position-relative">
+                                 <span class="label color-2EA" id="referral_link">Referral Link</span>
+                                 <input type="text" class="form-control"
+                                    value="http://ecmcoin.test?ref=0xB27448291CA7dF45278CF1c9c7422D76647f6B7E" readonly
+                                    id="referral_link" placeholder="Referral Link" />
+                                 <button class="text-copy-btn" type="button" id="referred_by"><i
+                                       class="far fa-copy"></i></button>
+                              </div>
+                              <div class="input-group border-gradient-3 d-flex align-items-center">
+                                 <span class="label color-2EA" id="referred_by">Referred By</span>
+                                 <input type="text" class="form-control"
+                                    value="0xB27448291CA7dF45278CF1c9c7422D76647f6B7E" id="referred_by"
+                                    placeholder="Enter Referred Wallet" />
+                              </div>
+                              <!-- <div class="line-1 mt-20"></div> -->
+                           </div>
+  <canvas id="myChart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    // Create a gradient for the chart's background
+    const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+    gradient.addColorStop(0, 'rgba(0, 255, 123, 0.2)'); // Lighter green at the top
+    gradient.addColorStop(1, 'rgba(0, 0, 0, 0)'); // Transparent at the bottom
+
+    const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['', '', '', '', '', '', ''], // Minimalist, no labels needed
+        datasets: [{
+          label: 'Dataset',
+          data: [15, 10, 18, 12, 14, 10, 20], // Adjusted example data points
+          borderColor: 'rgba(0, 255, 123, 1)', // Bright green line
+          borderWidth: 3,
+          fill: true,
+          backgroundColor: gradient, // Smooth gradient fill
+          tension: 0.4, // Smooth curve
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false, // Hide legend
+          },
+          tooltip: {
+            enabled: true, // Enable tooltips
+            callbacks: {
+              label: function(context) {
+                return `${context.raw}`; // Show raw value in the tooltip
+              }
+            },
+            backgroundColor: 'rgba(0, 255, 123, 0.9)', // Tooltip background color
+            titleFont: {
+              size: 12
+            },
+            bodyFont: {
+              size: 14
+            },
+            padding: 10
+          }
+        },
+        scales: {
+          x: {
+            display: false // Hide x-axis
+          },
+          y: {
+            display: false // Hide y-axis
+          }
+        },
+        layout: {
+          padding: 0
+        },
+        elements: {
+          point: {
+            radius: 0, // Hide data points
+            hoverRadius: 6, // Show larger circle on hover
+            backgroundColor: 'rgba(0, 255, 123, 1)' // Green hover color
+          }
+        },
+        animation: {
+          duration: 1500, // Smooth animation
+          easing: 'easeInOutQuart'
+        }
+      }
+    });
+  </script>
+</body>
+</html>
