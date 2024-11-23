@@ -798,6 +798,42 @@ p.active{
   margin-bottom: 12px;
   line-height: 29.76px;
 }
+.trading-apps-bg{
+  background-image: url('../images/bg/bg1.png');
+  background-size: cover;
+  background-position: center center;
+  border-radius:20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.app-thumbnail,.get-app-box{
+  position: relative;
+  z-index: 2;
+}
 .p-30{
   padding: 30px;
+}
+.logo-img img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top:10px;
+}
+.qr-code-box{
+  border: 1px solid #FFFFFF4D;
+  width: 150px;
+  height: 135px;
+  border-radius: 5px;
+  height: 100%;
+  background-color: #2B3139;
+  padding: 20px;
+}
+.qr-code-label h5{
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  color:#fff;
+  line-height: 26.4px;
+  margin-top:18px;
 }
