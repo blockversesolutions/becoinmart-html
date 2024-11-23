@@ -95,6 +95,7 @@ p {
   gap: 10px;
   background: #F9E727;
   border-radius: 10px;
+  transition: 0.5s;
 	text-transform: capitalize;
   box-shadow: 1px 6px 20px 0px #F9E7274D;
 }
@@ -106,6 +107,7 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: 0.5s;
   background: #F9E727;
   border-radius:8px;
 	text-transform: capitalize;
@@ -132,7 +134,16 @@ p {
   gap: 10px;
   background: #2B3139;
   border-radius:8px;
+  transition: 0.5s;
 	text-transform: capitalize;
+}
+.secondary-btn-sm:hover,.secondary-btn:hover{
+ 
+  box-shadow: 1px 6px 15px 0px #fcfcfc2a;
+}
+.primary-btn:hover,.primary-btn-sm:hover{
+ 
+  box-shadow: 1px 6px 15px 0px #fcfcfc2a;
 }
 .btn-sm{
   font-size: 18px;
