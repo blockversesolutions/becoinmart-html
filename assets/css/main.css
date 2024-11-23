@@ -254,7 +254,7 @@ button:focus:not(:focus-visible) {
 }
  .icon-bar {
 	color: #fff;
-	padding: 8px 12px;
+	padding:6px 10px;
 	border: 1px solid #fff;
 	border-radius: 5px;
 	display: inline-block;
@@ -319,9 +319,12 @@ button,button:active{
   color:#fff !important;
   box-shadow: 0 0 0  rgba(13, 109, 253, 0);
  }
+ .mobile-search-view{
+  display: none;
+ }
  .menu-bg {
-	/* background-color: #071827; */
-	backdrop-filter: blur(73px);
+	background-color: #071827;
+	/* backdrop-filter: blur(73px); */
 	border-bottom: 1px solid #242323;
 }
 .nav-item > a {
@@ -350,7 +353,7 @@ text-fill-color: transparent;
   font-weight: 500;
 }
 .navbar-brand img {
-	max-width: 155px;
+	max-width:220px;
 }
 .dropdown-toggle::after {
 	display: none;
@@ -359,7 +362,29 @@ a.nav-link.dropdown-toggle i{
   margin-left: 10px;
   font-size: 16px;
 }
-  
+.cursor{
+  cursor: pointer;
+}
+.searching-box input {
+	min-width: 370px;
+}
+/* .header-searching-box{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
+.input-shadow {
+	backdrop-filter: blur(4px);
+	border: 1.5px solid #FFFFFF1A;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF66;
+	background: rgba(255, 255, 255, 0.1);
+	letter-spacing: -0.005em;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
 /* main css */
 .header-area {
 	position: sticky;
@@ -470,6 +495,10 @@ a.nav-link.dropdown-toggle i{
 	font-size: 18px;
 	margin-bottom: 2px;
 	display: inline-block;
+  transition: 0.5s;
+}
+.footer-item ul li a:hover{
+  color:#F9E727;
 }
 .support-list{
   width:30%;
@@ -551,11 +580,6 @@ a.nav-link.dropdown-toggle i{
   }
 }
  
-.modal-content {
-	background: #0B121C;
-	padding: 20px;
-  border-radius: 32px;
-}
 .modal-header span i{
   color: #fff;
   font-size: 26px;
@@ -755,7 +779,7 @@ p.active{
   color:#fff;
   transition: 0.5s;
 }
-.social-menu ul li a i:hover{
+.social-menu ul li a:hover i{
   color:#F9E727;
 }
 .social-menu ul li a{
@@ -813,12 +837,20 @@ p.active{
 .p-30{
   padding: 30px;
 }
+.trading-info-logo {
+	display: inline-block;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
+	margin-right:5px;
+	border-left: 10px solid #F9E727;
+}
 .logo-img img{
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   top:10px;
+  width: auto;
 }
 .qr-code-box{
   border: 1px solid #FFFFFF4D;

@@ -5,115 +5,77 @@
   }
 }
  
-@media screen and (max-width:1280px) {
-  .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-}
 @media screen and (max-width:1199px) {
-  .roadmap-item:nth-child(odd) .roadmap-item-inner::after {
-    left: -182px;
+  .common-heading-section h2 {
+    font-size: 50px;
+    line-height: 65px;
   }
-  .roadmap-item-inner::after {
-    width: 210px;
+  .common-heading-section h3 {
+    font-size: 35px;
+    line-height: 42px;
   }
-  .roadmap-area {
-    position: relative;
-    margin-top:340px !important;
+  .footer {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  .roadmap-cover {
-    position: absolute;
-    left: 0;
-    right: 0;
+  .support-list {
+    width: 100%;
+    text-align: center;
+  }
+  .support-list p{
+    max-width: 70%;
     margin: auto;
-    width: 220px;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top:-155px;
-    transform: translateY(-50%);
-    background: #040C17;
-    padding: 15px;
-    border: 1px solid #0a3455;
-    border-radius: 10px;
+    width: 100%;
+    margin-top:20px;
   }
-  .roadmap-item{
-    max-width: 48%;
+  .header-right {
+    margin-top: 40px;
+    padding-bottom: 40px;
   }
-  .roadmap-item:nth-child(even) .roadmap-item-inner::after{
+  .navbar-nav{
+    margin-top: 30px;
+  }
+  .mobile-search-view{
+    display: block;
+  }
+  .desktop-view{
     display: none;
   }
 }
 @media screen and (max-width: 991px) {
+  .common-heading-section h2 {
+    font-size: 40px;
+    line-height:50px;
+  }
+  .common-heading-section h3 {
+    font-size: 32px;
+    line-height:40px;
+  }
+  .primary-btn,.secondary-btn {
+    padding: 14px 28px;
+    gap: 5px;
+  }
+  .btn-sm {
+    font-size: 15px;
+    height: 40px;
+    min-width: 144px;
+    padding:8px;
+  }
   .nav-item > a{
     padding: 10px;
   }
- 
   .navbar-collapse {
     margin-top: 25px;
   }
   .header-area {
-     
     margin-bottom:0px;
-    
+  }
+  .common-heading-section h2,.common-heading-section h3,.common-heading-section h4,.common-heading-section p{
+    text-align: center;
   }
   .hero-section {
-    padding-top: 20px;
-  }
-  .common-heading-section h3 {
-    font-size: 50px;
-  }
-  .small-card-left,.small-card-right {
-    bottom: -145px;
-  }
-  .common-heading-section h5 {
-    font-size: 24px;
-    line-height: 20px;
-  }
-  .common-heading-section h4 {
-    font-size: 35px;
-    line-height: 40px;
-  }
-  .platform-logo img {
-    width: 70px;
-    height: 70px;
-  }
-  .benefits-tag span {
-    font-size: 16px;
-  }
-  .benefits-tag ul {
-    gap: 7px;
-    margin-top:10px;
-
-  }
-  .benefits-tag ul li{
-    margin-right: 20px;
-  }
-  .platform-text {
-    margin-left: 10px;
-  }
-  .accordion-button {
-    font-size: 20px;
-  }
-  .support-list {
-    width: 66%;
-  }
-  .footer {
-    gap: 46px;
-  }
-  .roadmap-box-inner h5 {
-    font-size: 28px;
-    line-height: 30px;
-  }
-  .mt-100 {
-    margin-top: 80px;
-  }
-  .ptb-70 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top:70px;
   }
   .mt-70 {
     margin-top: 50px;
@@ -121,63 +83,35 @@
   .header-right {
     margin-top: 25px;
   }
-}
-@media screen and (max-width:767px) {
-  .roadmap-item-inner::after{
+  .trading-apps-section{
+    margin-top: 0;
+  }
+  .trading-apps-bg {
+    padding: 70px 20px;
+  }
+  .logo-img img{
     display: none;
   }
-  .roadmap-item{
-    max-width:100%;
+  .mt-100 {
+    margin-top: 80px;
   }
-  .buy-ecm-icon{
-    margin-right: 20px;
+  .clients-trading-table{
+    margin-top: 0;
   }
-  .platform-text{
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
+  .ico-section{
+    padding: 0;
   }
-  .gap-md-20{
-    gap: 20px;
+  .joining-step-section{
+    margin-top: 0;
   }
-  .common-heading-section h3 {
-    font-size: 35px;
-    line-height: 40px;
+  .footer-area {
+    padding-top: 70px;
   }
-  p {
-    font-size: 15px;
-    line-height:28px;
-  }
-  .small-card-left, .small-card-right {
-    bottom: -42%;
-  }
+   
+}
+@media screen and (max-width:767px) {
   .primary-btn, .secondary-btn {
-    padding: 10px 24px;
-    gap:5px;
-    font-size: 16px;
-  }
-  .common-heading-section h4 {
-    font-size: 30px;
-  }
-  .listed ul li a {
-    font-size: 18px;
-  }
-  .shear-icon-list ul li i {
-    font-size: 20px;
-  }
-  .shear-icon-list ul li {
-    height: 48px;
-    width: 48px;
-  }
-  .project-icon img, .project-founder img {
-    width: 60px;
-    height: 60px;
-  }
-  .primary-btn img, .secondary-btn img {
-    width: 16px;
-  }
-  .buy-coin-step h6 {
-    font-size: 25px;
+    padding: 12px 24px;
   }
   .support-list {
     width: 100%;
@@ -186,131 +120,98 @@
     gap:35px;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
   }
   .footer-item h4 {
     font-size: 24px;
   }
-  .input {
-    padding: 8px 30px;
+  .btn-list ul {
+    gap: 5px;
   }
-  .footer-subscribe button {
- 
-    height: 40px;
-    max-width: 40px;
-    min-width: 40px;
-    margin-right: 1px;
+  .common-heading-section h2 {
+    font-size: 32px;
+    line-height: 46px;
   }
-  .footer-logo img {
-    max-width: 105px;
+  .common-heading-section h3 {
+    font-size: 28px;
+    line-height: 40px;
   }
-  .social-menu ul li a.primary-btn {
-    height: 36px;
-    width: 36px;
+  p{
+    font-size: 16px;
   }
-  .social-menu ul li a i {
-    font-size: 15px;
+  .qr-code-box {
+    width: 100px;
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px;
   }
-  .hero-thumbnails{
-    margin-top: 40px;
+  .app-thumbnail img{
+    width: 70%;
   }
-  .chart-thumbnail{
-    margin-top: 40px;
+  .card-item h6 {
+    font-size: 20px;
   }
- 
- 
+  .step-number {
+    font-size: 14px;
+    padding: 4px 14px;
+    font-weight: 400;
+  }
+  .accordion-button {
+    padding: 20px;
+    font-size: 18px;
+  }
 }
 @media screen and (max-width:480px) {
-  .about-thumbnail img,.ecm-chart-text img,.chart-thumbnail img {
-    max-width: 300px;
-  }
-  .p-30 {
-    padding: 20px;
-  }
-  .g-15 {
+  .footer-bottom {
     gap: 10px;
   }
- 
+  .footer-item h4 {
+    font-size: 20px;
+  }
+  .ico-address p{
+    font-size: 13px;
+  }
+  .clients-trading-table table tr td {
+    font-size: 14px;
+  }
+  .clients-trading-table table tr td, .clients-trading-table table tr th {
+    padding: 10px 5px;
+  }
+  .table-card {
+    padding: 10px;
+  }
+  .clients-trading-table table tr th {
+    font-size: 14px;
+  }
+  .footer-pagination {
+    width: 44%;
+  }
+  .footer-item ul li a {
+    font-size: 15px;
+  }
+  p{
+    font-size: 15px;
+  }
   .navbar {
     padding-left:0px;
     padding-right:0px;
   }
-  .common-heading-section h3 {
-    font-size:32px;
-  }
-  .common-heading-section h4 {
-    font-size:26px;
-    line-height:35px;
-  }
-  .buy-ecm-icon {
-    margin-right: 10px;
-  }
-  .buy-ecm-icon img {
-    height: 48px;
-    width: 48px;
-  }
-  .whitepaper-faq ul li a {
-    padding: 10px 25px;
-    font-size: 18px;
-  }
-  .footer-bottom{
-    justify-content: center !important;
-  }
-  .ellipse {
-    overflow: hidden;
-    width: 300px
-  }
-  .header-area {
-    position: sticky;
-    padding: 0px 0;
-    top: 0px;
-    padding-top: 26px;
-  }
-  body{
-    overflow-x: hidden !important;
-  }
-  .ico-progress .progress {
-    height: 30px;
-  }
-  .footer-subscribe {
-    max-width: 310px;
-  }
-  .modal{
-    width: 98%;
-  }
-  .benefits-tag ul li p{
+  .primary-btn,.secondary-btn{
     font-size: 14px;
   }
-  .learn-more-section,.ecm-chart-section{
-    overflow: hidden;
+  .app-thumbnail img{
+    width:100%;
   }
-  .xl-p-20 {
-    padding: 10px !important;
-    font-size: 18px !important;
+  .navbar-brand img {
+    max-width: 190px;
   }
-  .gradient-bg {
-    font-size: 14px;
-  }
-  input{
-    font-size: 14px;
-  }
-  .label {
+  .nav-item > a {
     font-size: 15px;
-    font-weight: 500;
+    padding: 5px 10px;
   }
- 
-  .secondary-outline-btn {
-    padding: 8px 32px;
-    font-size: 16px;
+  .searching-box input {
+    min-width: 300px;
   }
-  .g-10 {
-    gap:5px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
+   
 }
 
 
