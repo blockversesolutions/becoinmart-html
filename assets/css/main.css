@@ -349,12 +349,7 @@ button,button:active{
  color:#DFCD41;
 }
 .nav-link.dropdown-toggle.show{
-  background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
-  background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+ color:#F9E727;
 }
 .dropdown-menu ul li a{
   padding: 5px 18px;

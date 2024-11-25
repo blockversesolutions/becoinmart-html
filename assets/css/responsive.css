@@ -211,6 +211,12 @@
   .searching-box input {
     min-width: 300px;
   }
+  .primary-btn img, .secondary-btn img {
+    width: 16px;
+  }
+  .support-list p {
+    max-width: 100%;
+  }
    
 }
 
