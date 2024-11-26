@@ -2,7 +2,7 @@
 const totalBlocks = 30; // Total number of blocks
 const targetPercentage = 90; // Target percentage
 const animationDuration = 2000; // Duration of animation in milliseconds
-const loopInterval = 3000; // Interval between loop animations (in milliseconds)
+const loopInterval = 99999; // Interval between loop animations (in milliseconds)
 
 // Calculate the number of blocks to fill based on the percentage
 const filledBlocks = Math.round((totalBlocks * targetPercentage) / 100);

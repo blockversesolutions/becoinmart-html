@@ -121,6 +121,7 @@ p {
   align-items: center;
   gap: 10px;
   background: #2B3139;
+  transition: 0.5s;
   border-radius: 10px;
 	text-transform: capitalize;
 }
@@ -137,13 +138,31 @@ p {
   transition: 0.5s;
 	text-transform: capitalize;
 }
+.secondary-btn:hover span{
+  color:#101115 !important;
+}
 .secondary-btn-sm:hover,.secondary-btn:hover{
- 
+  background: #F9E727;
   box-shadow: 1px 6px 15px 0px #fcfcfc2a;
+  color:#101115;
+}
+.secondary-btn-sm:hover i,.secondary-btn:hover i{
+  color:#101115 ;
 }
 .primary-btn:hover,.primary-btn-sm:hover{
- 
+  background: #2B3139;
+  color:#fff;
   box-shadow: 1px 6px 15px 0px #fcfcfc2a;
+}
+.primary-btn:hover i,.primary-btn-sm:hover i,.primary-btn:hover svg{
+  color:#fff;
+  fill: #fff ;
+  stroke: #fff;
+}
+.secondary-btn-sm:hover svg,.secondary-btn:hover svg{
+ 
+  fill: #101115 ;
+  stroke: #101115;
 }
 .btn-sm{
   font-size: 18px;
@@ -192,13 +211,28 @@ button:focus:not(:focus-visible) {
 .header-right{
   gap: 12px;
 }
-.primary-btn i,.secondary-btn i{
+.primary-btn i{
+  color: #101115;
+  transition: 0.5s;
+}
+.primary-btn i{
   font-size: 18px;
-  color:#fff;
+  
   font-weight: 700;
 }
-.primary-btn img,.secondary-btn img{
+.secondary-btn i{
+  color:#fff;
+  transition: 0.5s;
+}
+.primary-btn img,.secondary-btn img,.primary-btn svg,.secondary-btn svg{
   width: 20px;
+  fill:#101115;
+  stroke: #101115;
+  transition: 0.5;
+}
+.secondary-btn svg{
+  fill:#fff;
+  stroke: #fff;
 }
 .common-heading-section h2{
   font-size:60px;
@@ -223,9 +257,13 @@ button:focus:not(:focus-visible) {
 .hero-thumbnail {
 	background: #2B3139B2;
 	border-radius: 30px;
- 
 	height: 100%;
 	width: 100%;
+  transition: 0.5s;
+}
+.hero-thumbnail:hover{
+  background-color: #F9E727;
+  cursor: pointer;
 }
 .hero-thumbnail img {
 	/* position: absolute; */
@@ -411,7 +449,8 @@ a.nav-link.dropdown-toggle i{
 	color: #000;
 	font-size: 15px;
 	position: absolute;
-	right:16px;
+	right:10px;
+  z-index: 9;
 }
  
 .line-1{
@@ -802,7 +841,7 @@ p.active{
 .step-number {
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	top:0px;
 	font-family: Unbounded;
 	font-size: 18px;
 	padding: 10px 30px;
@@ -874,4 +913,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
   color:#fff;
   line-height: 26.4px;
   margin-top:18px;
+}
+.account-step-bg{
+  background-color: transparent !important;
+  background-image: url('../images/bg/account-bg4.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.account-step-bg:hover{
+  background-color: transparent !important;
+  background-image: url('../images/bg/account-bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

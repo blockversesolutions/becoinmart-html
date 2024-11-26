@@ -107,6 +107,9 @@
   .footer-area {
     padding-top: 70px;
   }
+  .join-info-box-inner {
+    padding: 40px 10px;
+  }
    
 }
 @media screen and (max-width:767px) {
@@ -150,14 +153,36 @@
   .card-item h6 {
     font-size: 20px;
   }
+  /* .step-number {
+    font-size: 14px;
+    padding: 4px 14px;
+    font-weight: 400;
+  } */
   .step-number {
     font-size: 14px;
     padding: 4px 14px;
     font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    width: 85px;
+    top: -4px;
+    text-align: center;
   }
   .accordion-button {
     padding: 20px;
     font-size: 18px;
+  }
+  .account-step-bg{
+    background-image: url('../images/bg/account-bg1.png');
+    margin-top: 15px;
+  }
+  .account-step-bg:hover{
+    background-image: url('../images/bg/account-bg2.png');
+  }
+  .card-item h6 {
+    margin-top: 25px;
   }
 }
 @media screen and (max-width:480px) {
@@ -211,7 +236,7 @@
   .searching-box input {
     min-width: 300px;
   }
-  .primary-btn img, .secondary-btn img {
+  .primary-btn img, .secondary-btn img,.primary-btn svg, .secondary-btn svg  {
     width: 16px;
   }
   .support-list p {
