@@ -217,7 +217,10 @@
   .support-list p {
     max-width: 100%;
   }
-   
+  .search-icon span {
+    height: 40px;
+    width: 40px;
+}
 }
 
 
