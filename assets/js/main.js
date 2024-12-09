@@ -50,5 +50,11 @@ function handleResize() {
 handleResize();
 window.addEventListener('resize', handleResize);
 
+// Hide the preloader dynamically after the page is fully loaded
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('loader-hide');
+});
+
 
 
